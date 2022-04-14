@@ -3,7 +3,7 @@
     height: 100vh;
     color: #fff;
     background-color: black;
-    position: relative;
+    position: fixed;
 }
 
 #image{
@@ -24,8 +24,8 @@
     width: 100%;
     margin: auto;
     padding: 1rem;
-
 }
+
 .form{
     display: flex;
     background-color: white;
