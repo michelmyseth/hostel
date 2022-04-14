@@ -1,0 +1,28 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: black;
+}
+
+.form{
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solide white;
+    padding: 4px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 600px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
