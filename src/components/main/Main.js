@@ -1,25 +1,25 @@
 import React from 'react';
 import './MainStyles.css';
-import { AiOutlineSearch } from 'react-icons/ai';
-import FrontImageMain from '../../assets/123.jpeg';
+import Video from '../../assets/ukiyo_video.mp4';
+import Img_source from '../../assets/la_source.jpeg'
 
 function Main() {
     return (
         <div className="main">
-            <img src={FrontImageMain} id="image" alt="/" />
-            <div className="content">
-                <h1>First Hostel Travel</h1>
-                <h2>Top 1 Locations WorldWide</h2>
-                <form className="form">
-                    <div>
-                        <input type="text" placeholder="Search Hostel" />
-                    </div>
-                    <div>
-                        <button>
-                            <AiOutlineSearch className="icon" />
-                        </button>
-                    </div>
-                </form>
+            <video autoPlay loop muted id="video">
+                <source src={Video} tupe='video/mp4'/>
+            </video>
+            <div className='hero-banner'>
+                <p>banner</p>
+            </div>
+            <div className='container'>
+            <div class="centered">
+                Prenez part à un voyage à la frontière des eaux.<br/>
+                le temps se fige, on se perd et se retrouve.<br/>
+                Là, tout reprend son sens, sa source.<br/><br/><br/>                                                                                                                                                                                                                                                                                                
+                _La Source<br/>
+            </div>
+            <img src={Img_source} id='source' alt="/"/>
             </div>
         </div>
     );

@@ -4,7 +4,6 @@ import {MdOutlineAccountCircle} from 'react-icons/md'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube} from 'react-icons/fa'
 import {useState} from 'react'
-
 import './NavbarStyle.css'
 
 function Navbar(){
@@ -13,14 +12,18 @@ function Navbar(){
     return (
         <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
             <div className='logo'>
-                <h2>HOSTEL.</h2>
+                <h2>UKIYO</h2>
             </div>
             <ul className='nav-menu'>
-                <li>Home</li>
-                <li>Destinations</li>
-                <li>Travel</li>
-                <li>Book</li>
-                <li>Views</li>
+
+                <li>La Maison</li>
+                <li>Bain Japonais</li>
+                <li>Massages</li>
+                <li>Soins</li>
+                <li>Iyashi Dôme</li>
+                <li>Cures</li>
+                <li>Concept Store</li>
+                <li>Invitation</li>
             </ul>
             <div className='nav-icons'>
                 <BiSearchAlt2 className='icon'/>
