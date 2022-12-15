@@ -5,6 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube} from 'react-icons/fa'
 import {useState} from 'react'
 import './NavbarStyle.css'
+import {Link} from 'react-router-dom'
 
 function Navbar(){
     const[nav, setNav] = useState(false)
@@ -12,18 +13,19 @@ function Navbar(){
     return (
         <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
             <div className='logo'>
-                <h2>UKIYO</h2>
+            <ul>
+                <li> <Link to="/"><h2>UKIYO</h2></Link></li>
+            </ul>
             </div>
             <ul className='nav-menu'>
-
-                <li>La Maison</li>
-                <li>Bain Japonais</li>
-                <li>Massages</li>
-                <li>Soins</li>
-                <li>Iyashi Dôme</li>
-                <li>Cures</li>
-                <li>Concept Store</li>
-                <li>Invitation</li>
+                <li><Link to="/la_maison">La Maison</Link></li>
+                <li><Link to="/bain_japonais">Bain Japonais</Link></li>
+                <li><Link to="/massages">Massages</Link></li>
+                <li><Link to="/soin">Soin</Link></li>
+                <li><Link to="/iyashi_dome">Iyashi Dôme</Link></li>
+                <li><Link to="/cures">Cures</Link></li>
+                <li><Link to="/concept_store">Concept Store</Link></li>
+                <li><Link to="/invitations">Invitation</Link></li>
             </ul>
             <div className='nav-icons'>
                 <BiSearchAlt2 className='icon'/>

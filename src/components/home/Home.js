@@ -1,9 +1,9 @@
 import React from 'react';
-import './MainStyles.css';
+import './HomeStyles.css';
 import Video from '../../assets/ukiyo_video.mp4';
 import Img_source from '../../assets/la_source.jpeg'
 
-function Main() {
+function Home() {
     return (
         <div className="main">
             <video autoPlay loop muted id="video">
@@ -13,6 +13,7 @@ function Main() {
                 <p>banner</p>
             </div>
             <div className='container'>
+            <br/><br/><br/><br/><br/><br/>
             <div class="centered">
                 Prenez part à un voyage à la frontière des eaux.<br/>
                 le temps se fige, on se perd et se retrouve.<br/>
@@ -20,9 +21,9 @@ function Main() {
                 _La Source<br/>
             </div>
             <img src={Img_source} id='source' alt="/"/>
-            </div>
-        </div>
+    </div> 
+    </div>
     );
 }
 
-export default Main;
+export default Home;

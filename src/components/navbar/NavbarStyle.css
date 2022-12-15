@@ -20,6 +20,11 @@ li {
     padding: 1rem;
 }
 
+a { 
+    color: black !important;
+    text-decoration: none !important;
+ } 
+
 .hamburger {
     display: none;
 }
